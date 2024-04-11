@@ -14,7 +14,8 @@ router.get(
   "/auth/google/callback",
   cors(),
   passport.authenticate("google", {
-    successRedirect: "http://localhost:3000/auth/google/success",
+    successRedirect:
+      "http://long-jade-springbok-tux.cyclic.app/auth/google/success",
     failureRedirect: "/auth/google/failure",
   })
 );
