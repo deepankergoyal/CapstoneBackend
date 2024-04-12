@@ -13,6 +13,7 @@ require("dotenv").config();
 
 const signupGoogleUser = async (req, res) => {
   try {
+    console.log("running");
     const { email, name } = req.user;
 
     let user = await User.findOne({ email });
