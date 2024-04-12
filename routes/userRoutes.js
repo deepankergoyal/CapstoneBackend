@@ -1,8 +1,12 @@
 const express = require("express");
+const cors = require("cors"); // Import the CORS middleware
 const userController = require("./../controllers/userController");
 const loginResgisterController = require("./../controllers/loginRegisterController");
 
 const router = express.Router();
+
+// Add CORS middleware to the router
+router.use(cors());
 
 router
   .route("/currentuser")
